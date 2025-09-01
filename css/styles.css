@@ -458,6 +458,9 @@ footer {
   width: 40px;
   height: 40px;
 }
+.footer-social {
+  margin-right: 80px;
+}
 
 .footer-social-link {
   display: flex;
@@ -500,4 +503,280 @@ footer {
   color: #f4f4fd;
   max-width: 264px;
 }
+
+.footer-form .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-form-subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-form-subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form-subscribe-input {
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 16px;
+  margin-right: 24px;
+  color: #fff;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.footer-form-subscribe-input::placeholder {
+  font-family: inherit;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.footer-subscribe-button {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
 /* ============ Footer ============ */
+
+/* ============ modal ============ */
+.modal-backdrop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  /* pointer-events: none; */
+}
+
+/* .modal-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+.modal-content {
+  position: fixed;
+
+  padding: 72px 24px 24px 24px;
+  width: 408px;
+  height: 80%;
+  min-height: 584px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
+  background-color: rgb(252, 252, 252);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: #2e2f42;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  color: #fff;
+  border: none;
+}
+.modal-close-icon {
+  fill: currentColor;
+}
+
+.modal-header {
+  max-width: 360px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: rgb(46, 47, 66);
+  margin: 48px auto 16px;
+}
+
+.recall-form-field-label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.recall-form-input-wrapper {
+  position: relative;
+}
+.recall-form-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.recall-form-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  color: #2e2f42;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+}
+.recall-form-field-wrapper {
+  margin-bottom: 8px;
+}
+.recall-form-input:focus {
+  outline: none;
+  border-color: #4d5ae5;
+}
+.recall-form-input:focus + .recall-form-input-icon {
+  fill: #4d5ae5;
+}
+
+.recall-form-input-comment {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  resize: none;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+}
+.recall-form-input-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+.recall-form-input-comment:focus {
+  outline: none;
+  border-color: #4d5ae5;
+}
+
+.recall-form-input-checkbox:checked
+  + .recall-form-field-checkbox
+  > .recall-form-custom-checkbox {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  fill: #f4f4fd;
+}
+.recall-form-input-checkbox:focus
+  + .recall-form-field-checkbox
+  > .recall-form-custom-checkbox {
+  outline: 1px solid #404bbf;
+  button: none;
+}
+
+.recall-form-custom-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+  fill: transparent;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.recall-form-field-checkbox {
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.recall-form-privacy-policy {
+  text-decoration: underline;
+}
+.recall-form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.recall-form-btn {
+  display: block;
+  border: none;
+  min-width: 169px;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============ /modal ============ */
