@@ -665,6 +665,15 @@ footer {
 .recall-form-input-wrapper {
   position: relative;
 }
+
+.recall-form-field-wrapper {
+  margin-bottom: 8px;
+}
+
+.recall-form-field-comment {
+  margin-bottom: 16px;
+}
+
 .recall-form-input-icon {
   position: absolute;
   top: 50%;
@@ -688,9 +697,7 @@ footer {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
 }
-.recall-form-field-wrapper {
-  margin-bottom: 16px;
-}
+
 .recall-form-input:focus {
   outline: none;
   border-color: #4d5ae5;
