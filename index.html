@@ -474,6 +474,7 @@
             </li>
           </ul>
         </div>
+        <!-- footer form -->
         <div class="footer-form">
           <p class="footer-form-subscribe-text">Subscribe</p>
           <form
@@ -482,21 +483,24 @@
             autocomplete="off"
             novalidate
           >
-            <label class="footer-form-subscribe-label" for="subscribe"></label>
-            <input
-              class="footer-form-subscribe-input"
-              type="email"
-              name="email"
-              id="subscribe"
-              placeholder="E-mail"
-            />
+            <label class="footer-form-subscribe-label"
+              ><input
+                class="footer-form-subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+            /></label>
+
             <button class="footer-subscribe-button" type="submit">
               Subscribe
-              <span
-                ><svg width="24" height="24" class="footer-icon-subcribe">
-                  <use href="./images/symbol-defs.svg#icon-subcribe"></use>
-                </svg>
-              </span>
+              <svg
+                class="footer-subscribe-button-icon"
+                width="24"
+                height="24"
+                class="footer-icon-subcribe"
+              >
+                <use href="./images/symbol-defs.svg#icon-subcribe"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -512,9 +516,9 @@
           </svg>
         </button>
 
-        <h2 class="modal-header">
+        <p class="modal-header">
           Leave your contacts and we will call you back
-        </h2>
+        </p>
 
         <form class="form-recall" action="#" method="post" novalidate>
           <div class="recall-form-field-wrapper">
@@ -594,7 +598,7 @@
             >
             <textarea
               class="recall-form-input-comment"
-              name="comment"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
               rows="4"
