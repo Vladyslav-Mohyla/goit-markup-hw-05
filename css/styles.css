@@ -689,7 +689,7 @@ footer {
   outline: transparent;
 }
 .recall-form-field-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .recall-form-input:focus {
   outline: none;
